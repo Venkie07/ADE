@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.arthi.retail.controllers.SetupController"
+      alignment="CENTER"
+      spacing="15"
+      prefWidth="500"
+      prefHeight="600"
+      styleClass="root">
+
+    <Label text="ARTHIRETAIL" styleClass="app-title"/>
+
+    <Label text="Create Your Account" styleClass="heading"/>
+
+    <TextField fx:id="usernameField"
+               promptText="Create Username"
+               maxWidth="300"/>
+
+    <PasswordField fx:id="passwordField"
+                   promptText="Create Password"
+                   maxWidth="300"/>
+
+    <PasswordField fx:id="confirmPasswordField"
+                   promptText="Confirm Password"
+                   maxWidth="300"/>
+
+    <PasswordField fx:id="adminPasswordField"
+                   promptText="Admin Password"
+                   maxWidth="300"/>
+
+    <Label fx:id="messageLabel"
+           text=""
+           wrapText="true"
+           maxWidth="300"
+           styleClass="message"/>
+
+    <Button text="CREATE ACCOUNT"
+            onAction="#handleCreateAccount"
+            maxWidth="300"
+            styleClass="primary-button"/>
+
+</VBox>

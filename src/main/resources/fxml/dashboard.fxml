@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.arthi.retail.controllers.DashboardController"
+            style="-fx-background-color: #101426;"
+            prefWidth="1100"
+            prefHeight="750">
+
+    <left>
+        <VBox styleClass="dashboard-sidebar" prefWidth="230">
+            <Label text="ArthiRetail" styleClass="dashboard-brand"/>
+
+            <Button text="  Dashboard"
+                    maxWidth="Infinity"
+                    styleClass="nav-button"
+                    onAction="#showDashboard"/>
+            <Button text="  Update Stocks"
+                    maxWidth="Infinity"
+                    styleClass="nav-button"
+                    onAction="#showUpdateStocks"/>
+            <Button text="  Billing"
+                    maxWidth="Infinity"
+                    styleClass="nav-button"
+                    onAction="#showBilling"/>
+            <Button text="  View Stocks"
+                    maxWidth="Infinity"
+                    styleClass="nav-button"
+                    onAction="#showViewStocks"/>
+            <Button text="  Profile"
+                    maxWidth="Infinity"
+                    styleClass="nav-button"
+                    onAction="#showProfile"/>
+            <Button text="  Subscription Payments"
+                    maxWidth="Infinity"
+                    styleClass="nav-button"
+                    onAction="#showSubscriptionPayments"/>
+            <Button text="  Sales History"
+                    maxWidth="Infinity"
+                    styleClass="nav-button"
+                    onAction="#showSalesHistory"/>
+            <Button text="  Customer Details"
+                    maxWidth="Infinity"
+                    styleClass="nav-button"
+                    onAction="#showCustomerDetails"/>
+        </VBox>
+    </left>
+
+    <center>
+        <ScrollPane fitToWidth="true"
+                    fitToHeight="true"
+                    style="-fx-background: #101426; -fx-background-color: #101426;">
+            <VBox fx:id="contentArea"
+                  styleClass="dashboard-content"
+                  spacing="18"/>
+        </ScrollPane>
+    </center>
+
+</BorderPane>

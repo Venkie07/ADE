@@ -1,0 +1,99 @@
+
+.root {
+    -fx-background-color: #101426;
+    -fx-padding: 30px;
+}
+
+.app-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8B9CFF;
+}
+
+.heading {
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.text-field,
+.password-field {
+    -fx-background-color: #202944;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #8993AA;
+    -fx-background-radius: 8px;
+    -fx-padding: 13px;
+    -fx-font-size: 14px;
+}
+
+.toggle-password-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: #ffffff;
+    -fx-opacity: 1;
+    -fx-font-family: "Segoe UI Emoji";
+    -fx-font-size: 19px;
+}
+
+.primary-button {
+    -fx-background-color: #695CFF;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 13px;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #8277FF;
+}
+
+.message {
+    -fx-text-fill: #FF8585;
+    -fx-font-size: 13px;
+}
+
+.dashboard-sidebar {
+    -fx-background-color: #0B1020;
+    -fx-padding: 18px 12px;
+    -fx-spacing: 6px;
+}
+
+.dashboard-brand {
+    -fx-text-fill: #8B9CFF;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 8px 18px 8px;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #C8CDE0;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 12px 14px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.nav-button:hover,
+.nav-button:selected {
+    -fx-background-color: #695CFF;
+    -fx-text-fill: white;
+}
+
+.dashboard-content {
+    -fx-background-color: #101426;
+    -fx-padding: 28px;
+}
+
+.page-title {
+    -fx-text-fill: white;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.page-subtitle {
+    -fx-text-fill: #AAB2C8;
+    -fx-font-size: 14px;
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.arthi.retail.controllers.RecoveryController"
+      alignment="CENTER"
+      spacing="18"
+      prefWidth="700"
+      prefHeight="750"
+      styleClass="root">
+
+    <Label text="Arthi Digital Enterprises" styleClass="app-title"/>
+    <Label text="Recover Credentials" styleClass="heading"/>
+
+    <PasswordField fx:id="adminPasswordField"
+                   promptText="Admin Password"
+                   maxWidth="300"/>
+
+    <TextField fx:id="usernameField"
+               promptText="New Username"
+               maxWidth="300"/>
+
+    <PasswordField fx:id="passwordField"
+                   promptText="New Password"
+                   maxWidth="300"/>
+
+    <PasswordField fx:id="confirmPasswordField"
+                   promptText="Confirm New Password"
+                   maxWidth="300"/>
+
+    <Label fx:id="messageLabel"
+           text=""
+           wrapText="true"
+           styleClass="message"/>
+
+    <Button text="UPDATE CREDENTIALS"
+            onAction="#handleUpdate"
+            maxWidth="300"
+            styleClass="primary-button"/>
+
+    <Button text="BACK TO LOGIN"
+            onAction="#handleBack"
+            styleClass="primary-button"
+            maxWidth="300"/>
+
+</VBox>
